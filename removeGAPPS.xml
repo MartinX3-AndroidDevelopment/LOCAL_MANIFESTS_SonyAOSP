@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remote name="gitlab" fetch="https://gitlab.com/omnirom" />
+
 <!-- Remove GAPPS -->
     <remove-project name="aosp_build" />
     <remove-project name="all" />
@@ -28,4 +30,7 @@
     <project path="packages/apps/Tag" name="platform/packages/apps/Tag" groups="pdk-fs" />
     <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" groups="pdk-fs" />
     <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" groups="pdk-fs" />
+    
+<!-- Add the chromium open source browser as replacement for the removed google chrome browser -->
+    <project path="packages/apps/OmniChromium" name="android_packages_apps_OmniChromium" remote="gitlab" revision="android-9.0" />
 </manifest>
